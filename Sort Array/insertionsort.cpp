@@ -11,12 +11,12 @@ void createArray(int arr[],int n){
 
 void insertionSort(int arr[], int n)
 {
-    int i, key, j;
-    for (i = 1; i < n; i++) {
+    int key;
+    for (int i = 1; i < n; i++) {
         key = arr[i];
-        j = i - 1;
+        
 
-        for(;j >= 0;  j--) {
+        for(int j = i-1 ;j >= 0;  j--) {
             if (arr[j] > key){
                 arr[j + 1] = arr[j];
 
